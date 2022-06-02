@@ -1,0 +1,253 @@
+/*
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+Familia: 'Roboto'
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    width: 100%;
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.main-header {
+    display: block;
+    
+}
+
+.logo {
+    width: 150px;
+    height: 100px;
+}
+
+.barra {
+    background-color: white;
+    width: 30%;
+    max-height: 30px;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-top: 1px;
+    border: solid black 1px;
+}
+
+.barra i {
+    background-color: white;
+    border: 1px black solid;
+    padding: 2px;
+}
+
+.titulo {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.burger-menu {
+    text-align: center;
+    color: #1259c3;
+    padding: 30px;
+    display: block;
+    margin: auto;
+}
+
+main {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.titulares {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.header-bottom a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 0px;
+    }
+
+.left-navbar {
+    list-style: none;
+    margin-top: 15px;
+    display: none;
+    
+}
+
+.right-navbar {
+    list-style: none;
+    padding-bottom: 15px;
+    display: none;
+    
+}
+
+.fa-address-card {
+    border: 1px solid black;
+    background: black;
+}
+
+.visita {
+    width: 100%;
+}
+
+article {
+padding: 10px;
+border: 5px solid #ebebeb;
+display: flex;
+flex-direction: column;
+}
+
+.producto {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.delivery {
+    color: #39b54a;
+    font-size: 6px;
+    padding: 5px;
+}
+
+
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.precio {
+    font-size: 18px;
+        
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+}    
+
+.descripciones {
+    font-size: 16px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 30px;
+    margin: 10px;
+}
+
+footer h3 {
+    font-size: 16px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+footer i {
+    font-size: 2em;
+    color: #1259c3;
+}
+
+.copy {
+    padding: 20px;
+}
+
+/* acá van medias queries*/
+
+@media (min-width: 768px) {
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .titulo {
+        max-width: 33%;
+        text-align: right;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .left-navbar, .right-navbar {
+        display: flex;
+        border: 1px red solid;
+        justify-content: space-between;
+    }
+}
+
+
+.registro {
+    background-color: #ebebeb;
+    padding: 20px;
+    margin: 20 px;
+    font-weight: bold;
+}
+
+.datos {
+    margin-bottom: 20px;
+}
+
+.control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.perfil {
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.categorias {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 5px 0;
+}
+
+
+.checkbox {
+    display: flex;
+    padding: 10px;
+
+}
+
+.boton {
+    background-color: #1259c3;
+    color: #ebebeb;
+    border-radius: 5px;
+    width: 100px;
+        
+}
