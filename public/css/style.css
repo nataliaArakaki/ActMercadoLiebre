@@ -289,7 +289,7 @@ footer i {
         width: 100%;
     }
     main {
-        margin-top: 175px;
+        margin-top: 173px;
     }
     .main-header, .header-bottom {
         margin: auto;
@@ -333,6 +333,8 @@ footer i {
 
 .datos {
     margin: 20px 10px;
+    font-size: 15px;
+
 }
 
 .control {
@@ -384,10 +386,12 @@ footer i {
     background-color: #1259c3;
     color: #ebebeb;
     border-radius: 5px;
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 40px;
     border-radius: 5px;
     margin: 10px 0px;
     padding: 1px 10px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
