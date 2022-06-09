@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre - Registro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <img src="/images/logo-mercado-liebre.svg" alt="Logo" class="logo">
+            
+            <h4 class="barra">
+                Buscar productos, Marcas
+                <i class="fa fa-magnifying-glass"></i>
+            </h4> 
+            <h5 class="titulo">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h5>
+        </div>
+        
+        <nav class="header-bottom">
+            <section>
+            <ul class="left-navbar">
+                <li>
+                <a href="https://wwww.mercadoliebre.com.ar/Ofertas">Ofertas</a> 
+                </li>
+
+                <li>
+                    <a href="https://wwww.mercadoliebre.com.ar/TiendasOficiales">Tiendas Oficiales</a> 
+                </li>
+
+                <li>
+                    <a href="https://wwww.mercadoliebre.com.ar/Vender">Vender</a> 
+                </li>
+
+                <li>
+                    <a href="https://wwww.mercadoliebre.com.ar/Ayuda">Ayuda</a> 
+                </li>
+            </ul>
+            </section>
+
+            <section>
+            <ul class="right-navbar">
+                <li>
+                    <a href="register.html">Creá tu cuenta</a> 
+                    <i class="fa-solid fa-address-card fa-inverse"></i>
+                </li>
+
+                <li>
+                    <a href="login.html">Ingresá</a> 
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                </li>
+
+                <li>
+                    <a href="https://wwww.mercadoliebre.com.ar/Compras"> Mis compras</a>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </li>
+            </ul>
+        </nav>
+        </section>
+        <div class="burger-menu">
+            <span class="fa-stack fa-2x">
+            <i class="fas fa-square fa-stack-2x"></i>
+            <i class="fas fa-bars fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+    </header>
+    <main>
+        <form class="create-form" action="/views/register.html" method="post" class="registro">
+            <div class="carga-datos">
+                <div class="datos">
+                    <label for="nombre"></label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required class="control"> 
+                </div> 
+
+                <div class="datos">
+                    <label for="usuario"></label>
+                    <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuari@" required class="control">
+                </div> 
+
+                <div class="datos">
+                    <div class="fecha">
+                        <label for="fecha">Fecha de nacimiento</label>
+                    </div>
+                    <input type="date" name="fecha" min="2004-01-01" required class="control">
+                </div>
+
+                <div class="datos">
+                    <label for="domicilio"></label>
+                    <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required class="control">
+                </div>
+
+                <div class="perfil">
+                    <div  class="datos-perfil">
+                        <label  for="perfil"> Perfil del usuario</label>  
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="perfil" value="Comprar" required> Comprar
+                        <input type="radio" name="perfil" value="Vender" required> Vender
+                    </div>
+                </div> 
+                <div class="datos">
+                    <div>
+                        <label class="categorias" for="catergorías"> Categorías de interés (podes elegir más de una)
+                    </div>    
+                    <div class="checkbox">
+                        <div>
+                            <input type="checkbox" name="intereses" value="Electro"> Electro
+                        </div>
+                        <div>
+                            <input type="checkbox" name="intereses" value="Moda"> Moda
+                        </div>
+                        <div>
+                            <input type="checkbox" name="intereses" value="Hogar"> Hogar
+                        </div>
+                        <div>
+                            <input type="checkbox" name="intereses" value="Juguetería"> Juguetería
+                        </div>
+                        <div>
+                            <input type="checkbox" name="intereses" value="VidaSana"> Vida Sana
+                        </div>
+                        </div>
+                        </label> 
+                </div>
+
+                <div class="datos">
+                    <label  for="foto"> Inserta tu foto
+                        <br>
+                        <input class="foto" type="file" name="avatar" accept=".jpg">
+                    </label>
+                </div>
+
+                <div class="datos">
+                    <label for="contraseña"></label>
+                    <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required class="control">
+                </div>
+            </div> 
+            <div class="botones">
+            <button class="boton" type="reset">Cancelar</button>
+            <button class="boton" type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
